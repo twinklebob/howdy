@@ -50,4 +50,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         config.hostmanager.manage_host = true
         config.hostmanager.aliases = settings['sites'].map { |site| site['map'] }
     end
+
+    # Run migrate when the server comes up
+    config.trigger.after :up do |trigger|
+        trigger.name = "Run Migrate"
+        trigger.info = "Running database migrations"
+        trigger.run_remote = {inline: "cd /home/vagrant/code && php artisan migrate"}
+    end
 end

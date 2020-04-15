@@ -1,6 +1,7 @@
 # HOWDY
 
 ## To set up for development
+
 1. Download the repo
 1. Run `composer install`
 1. Run `php vendor/bin/homestead make`
