@@ -8,6 +8,56 @@ body {
 }
 
 .content {
-  margin: 5px;
+  margin: 5px auto;
+  max-width: 960px;
+}
+
+.card {
+  max-width: 350px;
+  margin: 5px auto 10px;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.card h2 {
+  margin: 0px 0px 5px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0px;
+  font-size: 2rem;
+}
+
+.card.orange {
+  background-color: orangered;
+}
+
+.card.orange p {
+  color: white;
+}
+
+.card.blue {
+  background-color: lightblue;
+}
+
+.card.blue p {
+  color: blue;
+}
+
+.card.green {
+  background-color: lightgreen;
+}
+
+.card.green p {
+  color: green;
+}
+
+.card.red {
+  background-color: red;
+}
+
+.card.red p {
+  color: wheat;
 }
 

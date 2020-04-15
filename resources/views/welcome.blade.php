@@ -27,18 +27,23 @@
 
             <h1 class="title">Howdy</h1>
 
-            <div class="card">
+            <div class="card orange">
                 <h2>Today is:</h2>
                 <p id="day"></p>
             </div>
 
-            <div class="card">
+            <div class="card blue">
                 <h2>It's the</h2>
                 <p>
                 <span id="dom"></span> of
                 <span id="month"></span>,
                 <span id="year"></span>
                 </p>
+            </div>
+
+            <div class="card">
+                <h2>The season is:</h2>
+                <p id="season"></p>
             </div>
         </div>
     </body>

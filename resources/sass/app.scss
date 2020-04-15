@@ -10,9 +10,61 @@
 }
 
 .content {
-    margin: 5px;
+    margin: 5px auto;
+    max-width: 960px;
 }
 
 .title {}
 
-.card {}
+.card {
+    max-width: 350px;
+    margin: 5px auto 10px;
+    padding: 12px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+
+    h2 {
+        margin: 0px 0px 5px;
+        font-size: 1.2rem;
+    }
+
+    p {
+        margin: 0px;
+        font-size: 2rem;
+    }
+
+    &.orange {
+        background-color: orangered;
+
+        p {
+            color: white;
+        }
+    }
+
+    &.blue {
+        background-color: lightblue;
+
+        p {
+            color: blue;
+        }
+    }
+
+    &.green {
+        background-color: lightgreen;
+
+        p {
+            color: green;
+        }
+    }
+
+    &.red {
+        background-color: red;
+
+        p {
+            color: wheat;
+        }
+    }
+}
