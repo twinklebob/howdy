@@ -2,6 +2,8 @@
 
 This is designed as a really basic all-in-one view of today. It could be used in classrooms, or in care homes. It may also be useful as a quick view from a users device homescreen. It's early days, but hopefully it'll be useful for someone.
 
+![Howdy Screenshot](howdy.png)
+
 ## To set up for development
 
 1. Download the repo
