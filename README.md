@@ -8,6 +8,9 @@ This is designed as a really basic all-in-one view of today. It could be used in
 
 1. Download the repo
 1. Run `composer install`
+
+Bonus, if you want to use homestead/vagrant to set up your development environment you can also run:
+
 1. Run `php vendor/bin/homestead make`
 1. Run `vagrant up`
 
