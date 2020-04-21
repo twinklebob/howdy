@@ -23,8 +23,10 @@ class HowdyController extends Controller
     {
         $cardController = new CardController();
 
+        // Get default list of cards
         $cards = [
-            $cardController->today()
+            $cardController->today(),
+            $cardController->date()
         ];
 
         return view('howdy', ['cards' => $cards]);

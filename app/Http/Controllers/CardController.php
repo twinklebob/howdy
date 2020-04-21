@@ -21,10 +21,25 @@ class CardController extends Controller
      */
     public function today()
     {
+        $date = new \DateTime();
+
         $data = [
             'colour' => 'orange',
             'title' => 'Today is:',
-            'content' => '<p id="day"></p>'
+            'content' => '<p>' . $date->format('l')  . '</p>'
+        ];
+
+        return view('cards.card', $data);
+    }
+
+    public function date()
+    {
+        $date = new \DateTime();
+
+        $data = [
+            'colour' => 'blue',
+            'title' => "It's the",
+            'content' => '<p>' . $date->format('jS \of F, Y') . '</p>'
         ];
 
         return view('cards.card', $data);
