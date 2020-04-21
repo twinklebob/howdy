@@ -32,6 +32,11 @@ class CardController extends Controller
         return view('cards.card', $data);
     }
 
+    /**
+     * Generate card with today's date
+     *
+     * @return View
+     */
     public function date()
     {
         $date = new \DateTime();
