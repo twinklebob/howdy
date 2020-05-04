@@ -1,4 +1,6 @@
-//
+@use '_config' as *;
+@use '_mixins' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 
  html, body {
@@ -9,21 +11,40 @@
 }
 
 .content {
-    margin: 5px auto;
-    max-width: 960px;
+    margin: 5px 5px;
 }
 
 .title {}
 
+.cards-container {
+    @include md {
+        display: flex;
+
+        /* Put a card in the next row when previous cards take all width */
+        flex-wrap: wrap;
+    }
+}
+
 .card {
-    max-width: 350px;
     margin: 5px auto 10px;
-    padding: 12px;
 
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    @include md {
+        flex-basis: 50%;
+        margin: 0px;
+    }
 
+    @include lg {
+        flex-basis: 33.3%;
+        margin: 0px;
+    }
+
+    & > .card-content {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 5px;
+    }
 
     h2 {
         margin: 0px 0px 5px;
@@ -35,7 +56,7 @@
         font-size: 2rem;
     }
 
-    &.orange {
+    &.orange > .card-content {
         background-color: orangered;
 
         p {
@@ -43,7 +64,7 @@
         }
     }
 
-    &.blue {
+    &.blue > .card-content {
         background-color: lightblue;
 
         p {
@@ -51,7 +72,7 @@
         }
     }
 
-    &.green {
+    &.green > .card-content {
         background-color: lightgreen;
 
         p {
@@ -59,7 +80,7 @@
         }
     }
 
-    &.red {
+    &.red > .card-content {
         background-color: red;
 
         p {

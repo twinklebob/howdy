@@ -29,9 +29,11 @@
 
         <h1 class="title">Howdy</h1>
 
-        @foreach ($cards as $card)
-        {{ $card }}
-        @endforeach
+        <div class="cards-container">
+            @foreach ($cards as $card)
+            {{ $card }}
+            @endforeach
+        </div>
     </div>
 </body>
 
